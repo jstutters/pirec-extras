@@ -1,5 +1,5 @@
 import click
-from . import report
+import report
 
 
 @click.command()
