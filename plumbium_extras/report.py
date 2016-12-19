@@ -44,5 +44,5 @@ def getkeys(tar, keypaths):
         report_json = json.load(report_file)
         requested_vals = {}
         for k in keypaths:
-            requested_vals[k] = get_from_dict_by_path(report_json, keypath)
+            requested_vals[k] = get_from_dict_by_path(report_json, k)
     return requested_vals
