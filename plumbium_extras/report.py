@@ -36,3 +36,13 @@ def getkey(tar, keypath):
         report_file = get_report_json(tf)
         report_json = json.load(report_file)
     return get_from_dict_by_path(report_json, keypath)
+
+
+def getkeys(tar, keypaths):
+    with tarfile.open(tar, 'r:gz') as tf:
+        report_file = get_report_json(tf)
+        report_json = json.load(report_file)
+        requested_vals = {}
+        for k in keypaths:
+            requested_vals[k] = get_from_dict_by_path(report_json, keypath)
+    return requested_vals
