@@ -22,7 +22,7 @@ setup(
         'console_scripts': [
             'pbtool = plumbium-extras.cli:cli'
         ]
-    }
+    },
     license='MIT',
     classifiers=[
         'Development Status :: 3 - Alpha',
