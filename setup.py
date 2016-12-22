@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'pbtool = plumbium-extras.cli:cli'
+            'pbtool=plumbium_extras.cli:cli'
         ]
     },
     license='MIT',
