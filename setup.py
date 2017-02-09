@@ -7,7 +7,7 @@ def readme():
 
 setup(
     name='plumbium-extras',
-    version='0.0.3',
+    version='0.0.4',
     packages=['plumbium_extras'],
     zip_safe=True,
     author='Jon Stutters',
